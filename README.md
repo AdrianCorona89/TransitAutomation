@@ -16,11 +16,12 @@ Prerequisites:
 
 Option 1: Install from GitHub
 - Clone the repository:
-git clone https://github.com/AdrianCorona89/TransitAutomation.git
+```git clone https://github.com/AdrianCorona89/TransitAutomation.git
 cd TransitAutomation
+```
 - Ensure preconditions are met.
 - Run the tests using Maven:
-mvn test
+`mvn test`
 
 Option 2: Install from ZIP file
 - Download the ZIP file of the repository from GitHub.
@@ -83,5 +84,6 @@ logic, method design, framework choice (Selenium + TestNG + POM),
 and running tests headless by default were made by me.
 
 --------------------------------------------------------------------
+
 
 
