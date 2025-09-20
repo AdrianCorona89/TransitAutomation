@@ -16,20 +16,23 @@ Prerequisites:
 
 Option 1: Install from GitHub
 - Clone the repository:
-```git clone https://github.com/AdrianCorona89/TransitAutomation.git
+```
+git clone https://github.com/AdrianCorona89/TransitAutomation.git
 cd TransitAutomation
 ```
 - Ensure preconditions are met.
 - Run the tests using Maven:
-`mvn test`
-
+```
+mvn test
+```
 Option 2: Install from ZIP file
 - Download the ZIP file of the repository from GitHub.
 - Extract the ZIP file to a folder of your choice.
 - Open a terminal in the extracted folder.
 - Run the automated tests with Maven:
+```
 mvn test
-
+```
 Option 3:
 - Open Eclipse.
 - Go to File > Import > Maven > Existing Maven Projects.
@@ -84,6 +87,7 @@ logic, method design, framework choice (Selenium + TestNG + POM),
 and running tests headless by default were made by me.
 
 --------------------------------------------------------------------
+
 
 
 
