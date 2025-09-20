@@ -16,16 +16,17 @@ Prerequisites:
 
 Option 1: Install from GitHub
 - Clone the repository:
-git clone XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-cd transit-qa-automation
+git clone https://github.com/AdrianCorona89/TransitAutomation.git
+cd TransitAutomation
 - Ensure preconditions are met.
 - Run the tests using Maven:
 mvn test
 
 Option 2: Install from ZIP file
-- Download and extract the ZIP file.
-- Open a terminal and navigate to the root folder.
-- Run the tests using Maven:
+- Download the ZIP file of the repository from GitHub.
+- Extract the ZIP file to a folder of your choice.
+- Open a terminal in the extracted folder.
+- Run the automated tests with Maven:
 mvn test
 
 Option 3:
@@ -34,7 +35,7 @@ Option 3:
 - Select the root folder of the project (cloned or extracted).
 - Wait for Eclipse to download dependencies and build the project.
 - Right click on Tests.java > Run As > TestNG Test.
-- View test results in the Console and TestNG views.
+- View test results in the Console and TestNG tab.
 
 Notes: 
 - Tests run headless by default, but you can change this in 
@@ -52,10 +53,10 @@ test setup and teardown.
 
 --------------------------------------------------------------------
 NOTES ON FLAKINESS, ASSUMPTIONS, OR IMPROVEMENTS:
-There were some issues on flakiness, particularly due to the server
-time responses. I ended up using a WebDriverWait set to 5 seconds, 
-which seemed enough time. Otherwise the website is accessible and 
-stable.
+There were some issues on flakiness, particularly due to the server 
+responses time. I ended up using a WebDriverWait set to 5 seconds, 
+which seemed enough time. But in general, the website is accessible 
+and stable.
 
 The tests are executed on a Chrome browser managed by 
 WebDriverManager.
@@ -68,10 +69,10 @@ the core testing functionality instead.
 
 --------------------------------------------------------------------
 NOTES ON CHANGES TO MAKE AUTOMATED TESTING EASIER:
-Adding unique and stable IDs to key elements, such as search bar 
-and main buttons. I initially thought of using the IDs provided but 
-I read that react IDs are not stable, so I went instead with a mix 
-of Xpath locators.
+Adding unique and stable IDs to key elements, such as search bar, 
+main buttons, error messages and trips suggestions. I initially 
+thought of using the IDs provided but I read that react IDs are not 
+stable, so I went instead with a mix of Xpath locators. 
 
 --------------------------------------------------------------------
 USE OF LLM DISCLAIMER:
@@ -82,4 +83,5 @@ logic, method design, framework choice (Selenium + TestNG + POM),
 and running tests headless by default were made by me.
 
 --------------------------------------------------------------------
+
 
